@@ -81,9 +81,11 @@ const App = () => {
                             <h3 class="font-semibold mb-2">Tax as per 2025 - New Regime</h3>
                             {tax25 !== null && !error && <p id="newTax" class="text-2xl font-bold text-green-600">{formatCurrency(tax25)}</p>}
                         </div>
-                        {taxOld && <BreakdownSection breakdownData={taxOld} />}
-                        {taxNew && <BreakdownSection breakdownData={taxNew} />}
                     </div>
+                    {taxOld && <h2 className="text-lg font-bold mb-3">Breakdown 2024 New Regime</h2>}
+                    {taxOld && <BreakdownSection breakdownData={taxOld} />}
+                    {taxNew && <h2 className="text-lg font-bold mb-3">Breakdown 2025 New Regime</h2>}
+                    {taxNew && <BreakdownSection breakdownData={taxNew} />}
                 </div>
             </div>
         </div>

@@ -8,19 +8,19 @@ import (
 var taxSlabsNew = []structures.TaxSlab{
 	{Range: "0-4L", Percentage: "0", Limit: 400000, Rate: 0, Tax: 0},
 	{Range: "4L-8L", Percentage: "5%", Limit: 800000, Rate: 0.05, Tax: 20000},
-	{Range: "8L-12L", Percentage: "10%", Limit: 1200000, Rate: 0.1, Tax: 60000},
-	{Range: "12L-16L", Percentage: "15%", Limit: 1600000, Rate: 0.15, Tax: 120000},
-	{Range: "16L-20L", Percentage: "20%", Limit: 2000000, Rate: 0.2, Tax: 200000},
-	{Range: "20L-24L", Percentage: "25%", Limit: 2400000, Rate: 0.25, Tax: 300000},
+	{Range: "8L-12L", Percentage: "10%", Limit: 1200000, Rate: 0.1, Tax: 40000},
+	{Range: "12L-16L", Percentage: "15%", Limit: 1600000, Rate: 0.15, Tax: 60000},
+	{Range: "16L-20L", Percentage: "20%", Limit: 2000000, Rate: 0.2, Tax: 80000},
+	{Range: "20L-24L", Percentage: "25%", Limit: 2400000, Rate: 0.25, Tax: 100000},
 	{Range: "24L+", Percentage: "30%", Limit: 1e9, Rate: 0.3, Tax: 1e9},
 }
 
 var taxSlabsOld = []structures.TaxSlab{
 	{Range: "0-3L", Percentage: "0", Limit: 300000, Rate: 0, Tax: 0},
 	{Range: "3L-7L", Percentage: "5%", Limit: 700000, Rate: 0.05, Tax: 20000},
-	{Range: "7L-10L", Percentage: "10%", Limit: 1000000, Rate: 0.1, Tax: 50000},
-	{Range: "10L-12L", Percentage: "15%", Limit: 1200000, Rate: 0.15, Tax: 80000},
-	{Range: "12L-15L", Percentage: "20%", Limit: 1500000, Rate: 0.2, Tax: 140000},
+	{Range: "7L-10L", Percentage: "10%", Limit: 1000000, Rate: 0.1, Tax: 30000},
+	{Range: "10L-12L", Percentage: "15%", Limit: 1200000, Rate: 0.15, Tax: 30000},
+	{Range: "12L-15L", Percentage: "20%", Limit: 1500000, Rate: 0.2, Tax: 80000},
 	{Range: "15L+", Percentage: "30%", Limit: 1e9, Rate: 0.3, Tax: 1e9},
 }
 
