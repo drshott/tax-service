@@ -39,6 +39,7 @@ func CalculateSlab(ammount float64, taxSlabs []structures.TaxSlab) (float64, []s
 	
 	for _, slab := range taxSlabs {
 		if ammount > slab.Limit {
+			prevTax += slab.Tax
 			slabs = append(slabs, structures.RespTaxSlab{
 				Range: slab.Range,
 				Rate: slab.Percentage,
@@ -57,7 +58,6 @@ func CalculateSlab(ammount float64, taxSlabs []structures.TaxSlab) (float64, []s
 			break
 		}
 		prevLimit = slab.Limit
-		prevTax = slab.Tax
 	}
 
 	return totalTax, slabs
